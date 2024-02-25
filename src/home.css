@@ -1,0 +1,139 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+.appTitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainDiv{
+  display: grid;
+}
+
+.buttonDiv {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.url {
+  height: 25px;
+  font-size: 15px;
+}
+
+.downloadButton {
+  height: 50px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: dodgerblue;
+  color: white;
+}
+
+.directoryButton {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+  gap: 8px;
+  height: 40px;
+  width: 128px;
+  border: none;
+  background: #056bfa27;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  margin-top: 1px;
+  font-size: 19px;
+  line-height: 22px;
+  color: #056DFA;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #056bfa49;
+}
+
+.button:hover .svg-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ button:active {
+  transform: translate(0em, 0.2em);
+ }
+
+ .radio-inputs {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}

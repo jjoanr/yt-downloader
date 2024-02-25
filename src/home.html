@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>YTDownloader</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <h1 class='appTitle'>Youtube audio and video downloader </h1>
+    <form>
+    <div class='mainDiv'>
+      <input type="url" name="url" class="url" placeholder="Enter the content URL">
+      <div class="radio-inputs">
+        <label class="radio">
+          <input type="radio" name="radio" checked="">
+          <span class="name">Audio (mp3)</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio">
+          <span class="name">Video (mp4)</span>
+        </label>
+      </div>  
+      <div class="form-group">
+        <button id="setDownloadDestBtn"  class="btn btn-primary">Set download folder destination</button>
+        <div id="downloadFolderDest" ></div>
+      </div>
+      <button class='downloadButton' onclick="selectDownloadDirectory()">Download!</button>
+    </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
