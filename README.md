@@ -11,7 +11,7 @@ git clone https://github.com/jjoanr/ytDownloader.git
 1. Navigate into the project directory:
 cd ytDownloader/
 
-3.Install required node modules:
+3. Install required node modules:
 npm install
 
 3. Run the app
