@@ -1,39 +1,20 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-}
-
 .appTitle {
   font-size: 30px;
   text-align: center;
 }
 
 .mainDiv{
-  display: grid;
-}
-
-.buttonDiv {
-  justify-content: space-between;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.url {
+.url-form {
   height: 25px;
   font-size: 15px;
-}
-
-.downloadButton {
-  height: 50px;
-  margin-top: 25px;
-  font-size: 25px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: transparent;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  background: dodgerblue;
-  color: white;
+  width: 100%;
 }
 
 .directoryButton {
@@ -49,6 +30,32 @@ body {
   background: #056bfa27;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.selectDirectoryDiv {
+  justify-content: center;
+  text-align: center;
+}
+
+.downloadButton {
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: dodgerblue;
+  color: white;
+}
+
+.button:hover {
+  background: #056bfa49;
+}
+
+.button:hover .svg-icon {
+  animation: spin 1s linear infinite;
 }
 
 .lable {
@@ -99,7 +106,7 @@ button:hover {
   transform: translate(0em, 0.2em);
  }
 
- .radio-inputs {
+.radio-inputs {
   margin-top: 15px;
   position: relative;
   display: flex;
@@ -107,7 +114,6 @@ button:hover {
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
-  width: 300px;
   font-size: 14px;
   width: 100%;
 }
@@ -137,3 +143,4 @@ button:hover {
   background-color: #fff;
   font-weight: 600;
 }
+
