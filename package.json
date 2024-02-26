@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^29.0.1",
-    "electron-dl": "^3.5.2"
+    "electron-dl": "^3.5.2",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.11.5"
   }
 }

@@ -6,8 +6,8 @@ try {
 
 const createWindow = () => {
   win = new BrowserWindow({
-    width: 600,
-    height: 400,
+    width: 640,
+    height: 440,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,
@@ -47,5 +47,19 @@ ipcMain.on('open-file-dialog', (event) => {
     }
   }).catch(err => {
     console.log('Error selecting directory', err);
+  });
+});
+
+
+ipcMain.on('download-complete', (event) => {
+  const window = BrowserWindow.getFocusedWindow();
+  dialog.showMessageBox(window, {
+    type: 'info',
+    buttons: ['Close'],
+    message: 'Download completed!'
+  }).then(result => {
+    if (result.response === 1) {
+      shell.openPath(destinationDownloadFolder);
+    }
   });
 });
