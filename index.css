@@ -1,3 +1,7 @@
+body {
+background-color: #D3D3D3;
+}
+
 .appTitle {
   font-size: 30px;
   text-align: center;
@@ -19,9 +23,11 @@
 }
 
 .url-form {
+  background-color: #E5E4E2;
   height: 25px;
   font-size: 15px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .directoryButton {
@@ -45,6 +51,7 @@
 }
 
 .downloadButton {
+  border-radius: 10px;
   width: 100%;
   justify-content: center;
   height: 50px;
@@ -114,10 +121,11 @@ button:hover {
  }
 
 .radio-inputs {
+  border-radius: 10px;
   margin-top: 15px;
   position: relative;
   display: flex;
-  background-color: #EEE;
+  background-color: #E5E4E2;
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
