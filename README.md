@@ -9,7 +9,7 @@ This application allows you to download audio and video from YouTube.
 `git clone https://github.com/jjoanr/ytDownloader.git`
 
 1. Navigate into the project directory:\
-`cd ytDownloader/`
+`cd yt-downloader/`
 
 3. Install required node modules:\
 `npm install`
